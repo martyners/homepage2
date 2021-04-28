@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.header {
+    color: hsl(43, 74%, 39%);
+    text-shadow: 1px 2px 5px hsl(0, 0%, 83%);
+    font-size: 40px;
+}
+

@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container-background {
+    background-color: rgb(233, 224, 212);
+}

@@ -1,0 +1,22 @@
+.navigation__list {
+    font-size: 20px;
+    list-style-type: "❤";
+}
+
+.navigation__listItem {
+    margin: 10px;
+}
+
+.navigation__link {
+    color: hsl(0, 0%, 20%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation__link:hover {
+    color: hsl(0, 0%, 50%);
+}
+
+.navigation__link:active {
+    color: hsl(43, 74%, 29%);
+}

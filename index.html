@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajan - Golden Retriever</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="./css/section.css" rel="stylesheet" type="text/css">
+    <link href="./css/table.css" rel="stylesheet" type="text/css">
+    <link href="./css/container.css" rel="stylesheet" type="text/css">
+    <link href="./css/tableContainer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <script defer src="./js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="container js-container">
+    <header>
+        <h1 class="header">Rajan</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#o-rasie">O rasie</a>
+            </li>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#kumple">Kumple</a>
+            </li>
+            <li class="navigation__listItem">
+                <a class="navigation__link" href="#kontakt">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="section">
+        <img class="section__photo js-photoRajan" src="./images/photo.jpg" alt="Rajan - moje zdjęcie">
+        <br>
+        <button class="js-hideImg">Usuń zdjęcie</button>
+        <section id="o-rasie">
+            <h2 class="section__subHeader">O rasie</h2>
+            <p class="section__paragraph">
+                <strong>Golden retriever</strong> od lat zajmuje jedno z czołowych miejsc w klasyfikacji <b>ulubionych
+                    psów
+                    Polaków</b>. Jego popularność nie ogranicza się jednak tylko do Europy – to pies znany i ceniony na
+                całym
+                świecie, a zwłaszcza w Stanach Zjednoczonych. Nadaje się do wielu zadań, jest <em>czuły i przyjazny dla
+                    wszystkich</em>. To doskonały towarzysz, zarówno w pracy jak i w domu
+            </p>
+            <p class="section__paragraph">Informacje ze strony <i>https://www.wamiz.pl</i></p>
+            <button class="js-buttonChangeBackground">Zmień tło na szare</button>
+        </section>
+        <section id="kumple">
+            <h2 class="section__subHeader">Kumple</h2>
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="table__caption">Moje ziomki i informacje dodatkowe</caption>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="col">Imię</th>
+                        <th class="table__cell" scope="col">Rasa</th>
+                        <th class="table__cell" scope="col">Informacje dodatkowe</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Reks</th>
+                        <td class="table__cell" rowspan="2">Kundelier</td>
+                        <td class="table__cell">Łatka na oku</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Punio</th>
+                        <td class="table__cell">Największy aferzysta na dzielni</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Funia</th>
+                        <td class="table__cell">Parówczak</td>
+                        <td class="table__cell">Fajne ma piłeczki</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer id="kontakt">
+            <h2 class="section__subHeader">Gdzie możesz mnie znaleźć</h2>
+            <a
+                href="https://www.google.pl/maps/place/Psia+Pla%C5%BCa/@54.4670466,18.5535972,15z/data=!3m1!4b1!4m5!3m4!1s0x46fda64d11f080b9:0xcb23beafec3572ce!8m2!3d54.4670349!4d18.562352">Link
+                do psiaparku</a>
+        </footer>
+    </main>
+</body>
+
+</html>
