@@ -9,6 +9,11 @@
         buttonChangeBackground.innerText = container.classList.contains("container-background") ? "Zmien tło na białe" : "Zmień tło na szare";
     };
 
+    const removePhoto = () => {
+        const photoRajan = document.querySelector(".js-photoRajan");
+        photoRajan.remove();
+    }
+
     const init = () => {
         welcomeMessage();
 
@@ -16,13 +21,7 @@
         buttonChangeBackground.addEventListener("click", toggleBackground);
 
         const buttonHideImg = document.querySelector(".js-hideImg");
-
-        buttonHideImg.addEventListener("click", () => {
-            const photoRajan = document.querySelector(".js-photoRajan");
-            photoRajan.remove();
-        });
-
-
+        buttonHideImg.addEventListener("click", removePhoto);
     };
 
     init();
