@@ -2,26 +2,26 @@
 
     const welcomeMessage = () => console.log("Łapa!");
 
-    const toggleBackground = () => {
+    const toggleBackground = (changeBackgroundButton) => {
         const container = document.querySelector(".js-container");
 
-        container.classList.toggle("container-background");
-        buttonChangeBackground.innerText = container.classList.contains("container-background") ? "Zmien tło na białe" : "Zmień tło na szare";
+        container.classList.toggle("container--lightBackground");
+        changeBackgroundButton.innerText = container.classList.contains("container--lightBackground") ? "Zmien tło na białe" : "Zmień tło na szare";
     };
 
     const removePhoto = () => {
         const photoRajan = document.querySelector(".js-photoRajan");
         photoRajan.remove();
-    }
+    };
 
     const init = () => {
         welcomeMessage();
 
-        const buttonChangeBackground = document.querySelector(".js-buttonChangeBackground");
-        buttonChangeBackground.addEventListener("click", toggleBackground);
+        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
+        changeBackgroundButton.addEventListener("click", toggleBackground);
 
-        const buttonHideImg = document.querySelector(".js-hideImg");
-        buttonHideImg.addEventListener("click", removePhoto);
+        const hideImgButton = document.querySelector(".js-hideImg");
+        hideImgButton.addEventListener("click", removePhoto);
     };
 
     init();
