@@ -1,8 +1,9 @@
 {
+    const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
 
     const welcomeMessage = () => console.log("Łapa!");
 
-    const toggleBackground = (changeBackgroundButton) => {
+    const toggleBackground = () => {
         const container = document.querySelector(".js-container");
 
         container.classList.toggle("container--lightBackground");
@@ -17,7 +18,6 @@
     const init = () => {
         welcomeMessage();
 
-        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
         changeBackgroundButton.addEventListener("click", toggleBackground);
 
         const hideImgButton = document.querySelector(".js-hideImg");
